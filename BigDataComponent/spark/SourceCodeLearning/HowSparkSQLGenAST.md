@@ -1,3 +1,5 @@
+[TOC]
+# 如何查看SparkSQL 生成的抽象语法树？
 ## 集群环境
 ```
 mac book `macOS Catalina` version `10.15.7`

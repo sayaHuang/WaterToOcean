@@ -1,3 +1,5 @@
+[TOC]
+# 自定义命令 compact table合并小文件
 ## 集群环境
 ```
 mac book `macOS Catalina` version `10.15.7`
