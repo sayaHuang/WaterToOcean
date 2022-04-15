@@ -138,6 +138,7 @@ abstract class RDD[T: ClassTag](
 }
 ```
 
+
 方法主要代码 `checkpointData = Some(new ReliableRDDCheckpointData(this))`
 checkpointData的类型为`Option[RDDCheckpointData[T]] `
 
@@ -148,7 +149,8 @@ ReliableRDDCheckpointData 将 RDD 数据写入可靠存储的检查点。
 这允许以先前计算的状态在失败时重新启动驱动程序。
 
 **这段代码的作用**
-对RDD调用`checkpoint`函数，其实就是初始化了`checkpointData`，并不立即执行checkpint操作，你可以理解成这里只是对RDD进行checkpint标记操作。
+对RDD调用`checkpoint`函数，其实就是初始化了`checkpointData`，并不立即执行checkpint操作，你可以理解成这里只是对RDD进行checkpint标记操作。  
+
 
 ```scala
 //RDD 类, 调用 count() 方法
