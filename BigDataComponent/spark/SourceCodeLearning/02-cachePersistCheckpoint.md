@@ -73,7 +73,9 @@ res7: rdd.type = ParallelCollectionRDD[0] at parallelize at <console>:24
 <img src=./image/Snipaste_2022-04-14_22-29-07.jpg  width=60%  height=60%/>
 </div>
 ###  解读
+
 #### checkpoint
+
 ```scala
 //SparkContext类
 class SparkContext(config: SparkConf) extends Logging {
